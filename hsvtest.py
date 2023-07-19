@@ -6,6 +6,8 @@ def nothing(x):
 
 # Load image
 image = cv2.imread('test.png')
+# image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
 
 # Create a window
 cv2.namedWindow('image')
