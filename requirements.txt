@@ -1,0 +1,5 @@
+matplotlib==3.5.2
+numpy==1.23.0
+opencv_python==4.7.0.68
+Pillow==9.2.0
+pywin32==304
