@@ -1,4 +1,4 @@
-# Pokerstars HUD
+# PokerStars HUD
 
 Displays VPIP/PFR for players at a single table. 
 
@@ -14,6 +14,7 @@ In Powershell:
    - You may need to add the install location (e.g. `C:\Program Files\Tesseract-OCR`) to your PATH
 7. `pip install .\tesserocr.whl`
 
+In PokerStars, disable throwables. *Settings > Table Appearance > Animation > Throwables*. 
 
 ## Running
 
@@ -26,11 +27,24 @@ Then run
 
 `python .\hud.py`
 
-To quit, press `q`. To re-scan for new players, press `r`.
+**Do not resize the PokerStars window.** To quit, press `q`. To re-scan for new players, press `r`.
 
 ## Todo
 
+**Known Bugs**:
+
+* Players that fail to be detected can be re-created, losing a portion of their hands. 
+
+**Important changes:**
+* Detect when players sit down at table
+* Better UI
+* More stats
+
+**Other changes:**
 * Better position recognition
 * Fast re-scan
-* Detect when players sit down at table
 * Code comments
+* Refactor to make less horrible
+* Support resizing windows
+* Support multiple windows
+* Support throwables
